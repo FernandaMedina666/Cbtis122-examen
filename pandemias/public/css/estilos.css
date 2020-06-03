@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../img/fondo.png)#000;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open sans",Arial, sans-serif;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    background: rgba(114, 114, 114,.7);
+    margin: 40px 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/*                   Section main                 */
+
+.main {
+    width: 70%;
+    background: #f2f2f2;
+}
+
+.main .img-artic {
+    margin: auto;
+}
+
+.main .img-artic img {
+    padding: 20px 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.main .texto {
+    padding: 40px;
+}
+
+.main .texto h1,h2 {
+    color: #0B0B61;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main .texto p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+/*             ASIDE            */
+
+aside {
+    width: 30%;
+    background: #0A0A2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+aside .img {
+    height: 200px;
+    margin: 20px;
+}
+
+aside .img img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+}
+
+/*           Footer          */
+footer {
+    background: rgba(109, 109, 109.5);
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .autor p{
+    color: #fff;
+    padding: 15px;
+}
+
+footer .redes a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+footer .redes a:hover {
+    background: #0B0B3B;
+}
+
+@media screen and (max-width:800px){
+    header {
+        width: 30%;
+    }
+
+    .main {
+       width: 100%;
+   }
+   aside {
+       flex-direction: row;
+       width: 100%;
+   }
+
+   footer {
+    flex-direction: column;
+}
+
+.autor {
+    order: 2;
+}
+
+.redes {
+    margin-top: 20px;
+    order: 1;
+}
+
+}
+
+@media screen and (max-width:470px){
+    header {
+        background: rgba(114, 114, 114,.7);
+        margin: 40px 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    aside {
+        display: none;
+    }
+}

@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:url(../img/fondo.png)#000 ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "Open sans" , sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    background: rgba(114, 114, 114,.7);
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/*                 MAIN                     */
+.main {
+    width: 70%;
+    background: #f2f2f2;
+}
+
+.main .inmuno {
+    margin: auto;
+}
+
+.main .inmuno img {
+    padding: 20px 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.main .texto {
+    width: 100%;
+}
+
+.main .texto article .titulo {
+    color: #DF7401;
+    padding: 20px 30px;
+    font-weight: 600;
+}
+
+.main .texto article .subtitulo {
+    color: #DF7401;
+    padding: 20px 30px;
+    font-weight: 400;
+}
+
+.main .texto  p {
+    padding: 20px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+/*           ASIDE           */
+aside {
+    background: #0A0A2A;
+    width: 30%;
+    height: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+aside .ad {
+    width: 100%;
+}
+
+aside .ad img {
+    width: 100%;
+    padding: 15px;
+}
+
+aside .ad h3 {
+    text-align: center;
+    color: #f2f2f2;
+    padding: 15px;
+}
+
+aside .ad p {
+    color: #f2f2f2;
+    padding: 15px;
+    line-height: 27px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*Pie de página*/
+
+footer {
+    background: rgba(109, 109, 109.5);
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .autor p{
+    color: #fff;
+    padding: 15px;
+}
+
+footer .redes a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+footer .redes a:hover {
+    background: #0B0B3B;
+}
+
+@media screen and (max-width:900px){
+    .main {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .autor {
+        order: 2;
+    }
+    
+    .redes {
+        margin-top: 20px;
+        order: 1;
+    }
+
+    aside {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+}
+@media screen and (max-width:400px){
+    aside {
+        display: none;
+    }
+}
